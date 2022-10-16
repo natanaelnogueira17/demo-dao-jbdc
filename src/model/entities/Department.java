@@ -8,6 +8,8 @@ public class Department implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name;
+	
+	// constructor
 	public Department(Integer id, String name) {
 		super();
 		this.id = id;
@@ -16,6 +18,8 @@ public class Department implements Serializable{
 	public Department() {
 		super();
 	}
+	
+	// getters and setters
 	public Integer getId() {
 		return id;
 	}
@@ -28,6 +32,8 @@ public class Department implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	// hascCode and equals
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -43,6 +49,8 @@ public class Department implements Serializable{
 		Department other = (Department) obj;
 		return Objects.equals(id, other.id);
 	}
+	
+	// toString methods
 	
 	@Override
 	public String toString() {
